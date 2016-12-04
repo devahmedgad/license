@@ -1,0 +1,84 @@
+/*****************************************************
+	
+	***** Start | Custom Style For [ Admin-panel ] 
+
+/*****************************************************/
+
+/*** Start My Framework */
+	
+	hr{
+		height:0;
+		width:100%;
+		color:#999;
+	}
+
+	#img-file-plus{
+		margin: 10px;
+		color:#1a5484;
+		cursor:pointer;
+	}
+
+
+/*** End My Framework */
+
+/* Start page [ Photos ] styles */
+
+#arrow {
+    position: absolute;
+    left: 29px;
+    top: 64px;
+    font-size: 37px;
+    cursor: pointer;
+    color: #f0f8ff 
+}
+.img-section{
+	display: none ;
+}
+.img-section #div{
+	margin-bottom:10px ;
+}
+.img-section #div a i{
+	font-size: 23px;
+    color: #4d5b69;
+    position: absolute;
+    right: 9px;
+    top: -3px;
+    cursor:pointer;
+}
+.img-section #div a i:hover{
+	font-size: 35px;
+    color: #d22354;
+    position: absolute;
+    right: 9px;
+    top: -3px;
+    cursor:pointer;
+}
+	
+
+.img-section #div img{
+	width:300px; 
+	height:200px; 
+	margin-bottom:10px; 
+	padding:5px
+}
+.contant-images-file #my_label
+{
+	text-align: right;padding:5px ;border-radius: 14px
+}
+
+#msg_err{
+	display:none;
+}
+
+/* End Photos styles */
+
+
+.nav-tabs, .nav-pills{
+margin-bottom: 0;
+}
+.aside-box{
+	background: #fff;
+	border:1px solid #ddd;
+	border-top:0 ;
+	padding: 10px;
+}

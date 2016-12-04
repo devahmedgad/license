@@ -1,0 +1,3 @@
+[09-May-2016 17:13:06 Africa/Cairo] PHP Parse error:  syntax error, unexpected '?' in /home/curehosp/public_html/test.php on line 3
+[09-May-2016 17:13:24 Africa/Cairo] PHP Warning:  phpinfo() has been disabled for security reasons in /home/curehosp/public_html/test.php on line 2
+[09-May-2016 17:27:39 Africa/Cairo] PHP Warning:  phpinfo() has been disabled for security reasons in /home/curehosp/public_html/test.php on line 2

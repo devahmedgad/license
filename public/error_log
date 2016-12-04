@@ -1,0 +1,109 @@
+[09-May-2016 15:42:00 Africa/Cairo] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS), expecting identifier (T_STRING) or variable (T_VARIABLE) or '{' or '$' in /home/curehosp/public_html/config/app.php on line 139
+[09-May-2016 15:42:50 Africa/Cairo] PHP Fatal error:  Call to undefined method Illuminate\Foundation\Bootstrap\ConfigureLogging::configureHandler() in /home/curehosp/public_html/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/ConfigureLogging.php on line 54
+[13-Jul-2016 09:05:05 UTC] PHP Fatal error:  Namespace declaration statement has to be the very first statement in the script in /home/deerbeauty/public_html/app/app/Http/Controllers/SalonsCtrl.php on line 2
+[13-Jul-2016 09:05:06 UTC] PHP Fatal error:  Namespace declaration statement has to be the very first statement in the script in /home/deerbeauty/public_html/app/app/Http/Controllers/SalonsCtrl.php on line 2
+[13-Jul-2016 09:18:28 UTC] PHP Fatal error:  Can't use function return value in write context in /home/deerbeauty/public_html/app/storage/framework/views/631c46156061f2b704c99089387e2c21 on line 48
+[13-Jul-2016 09:18:30 UTC] PHP Fatal error:  Can't use function return value in write context in /home/deerbeauty/public_html/app/storage/framework/views/631c46156061f2b704c99089387e2c21 on line 48
+[13-Jul-2016 09:19:06 UTC] PHP Warning:  Uncaught exception 'ErrorException' with message 'Undefined variable: request' in /home/deerbeauty/public_html/app/app/Http/Controllers/SalonsCtrl.php:125
+Stack trace:
+#0 /home/deerbeauty/public_html/app/app/Http/Controllers/SalonsCtrl.php(125): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'Undefined varia...', '/home/deerbeaut...', 125, Array)
+#1 [internal function]: App\Http\Controllers\SalonsCtrl->update('1')
+#2 /home/deerbeauty/public_html/app/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(246): call_user_func_array(Array, Array)
+#3 /home/deerbeauty/public_html/app/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(162): Illuminate\Routing\Controller->callAction('update', Array)
+#4 /home/deerbeauty/public_html/app/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(107): Illuminate\Routing\ControllerDispatcher->call(Object(App\Http\Controllers\SalonsCtrl), Object(Illuminate\Routing\Route), 'update')
+#5 [internal function]: Illu in /home/deerbeauty/public_html/app/app/Http/Controllers/SalonsCtrl.php on line 125
+[13-Jul-2016 09:19:06 UTC] PHP Fatal error:  Call to a member function hasFile() on a non-object in /home/deerbeauty/public_html/app/app/Http/Controllers/SalonsCtrl.php on line 125
+[13-Jul-2016 09:19:58 UTC] PHP Warning:  Uncaught exception 'ErrorException' with message 'Undefined variable: request' in /home/deerbeauty/public_html/app/app/Http/Controllers/SalonsCtrl.php:125
+Stack trace:
+#0 /home/deerbeauty/public_html/app/app/Http/Controllers/SalonsCtrl.php(125): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'Undefined varia...', '/home/deerbeaut...', 125, Array)
+#1 [internal function]: App\Http\Controllers\SalonsCtrl->update('1')
+#2 /home/deerbeauty/public_html/app/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(246): call_user_func_array(Array, Array)
+#3 /home/deerbeauty/public_html/app/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(162): Illuminate\Routing\Controller->callAction('update', Array)
+#4 /home/deerbeauty/public_html/app/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(107): Illuminate\Routing\ControllerDispatcher->call(Object(App\Http\Controllers\SalonsCtrl), Object(Illuminate\Routing\Route), 'update')
+#5 [internal function]: Illu in /home/deerbeauty/public_html/app/app/Http/Controllers/SalonsCtrl.php on line 125
+[13-Jul-2016 09:19:58 UTC] PHP Fatal error:  Call to a member function hasFile() on a non-object in /home/deerbeauty/public_html/app/app/Http/Controllers/SalonsCtrl.php on line 125
+[13-Jul-2016 09:35:40 UTC] PHP Warning:  Uncaught exception 'ErrorException' with message 'Undefined variable: file' in /home/deerbeauty/public_html/app/app/Http/Controllers/SalonsCtrl.php:128
+Stack trace:
+#0 /home/deerbeauty/public_html/app/app/Http/Controllers/SalonsCtrl.php(128): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'Undefined varia...', '/home/deerbeaut...', 128, Array)
+#1 [internal function]: App\Http\Controllers\SalonsCtrl->update('1', Object(Illuminate\Http\Request))
+#2 /home/deerbeauty/public_html/app/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(246): call_user_func_array(Array, Array)
+#3 /home/deerbeauty/public_html/app/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(162): Illuminate\Routing\Controller->callAction('update', Array)
+#4 /home/deerbeauty/public_html/app/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(107): Illuminate\Routing\ControllerDispatcher->call(Object(App\Http\Controllers\SalonsCtrl), Object(Illuminate\Routing\Route), 'update' in /home/deerbeauty/public_html/app/app/Http/Controllers/SalonsCtrl.php on line 128
+[13-Jul-2016 09:35:40 UTC] PHP Fatal error:  Call to a member function getClientOriginalExtension() on a non-object in /home/deerbeauty/public_html/app/app/Http/Controllers/SalonsCtrl.php on line 128
+[13-Jul-2016 09:37:31 UTC] PHP Fatal error:  Call to a member function getClientOriginalExtension() on a non-object in /home/deerbeauty/public_html/app/app/Http/Controllers/SalonsCtrl.php on line 127
+[13-Jul-2016 09:37:35 UTC] PHP Fatal error:  Call to a member function getClientOriginalExtension() on a non-object in /home/deerbeauty/public_html/app/app/Http/Controllers/SalonsCtrl.php on line 127
+[13-Jul-2016 09:37:41 UTC] PHP Fatal error:  Call to a member function getClientOriginalExtension() on a non-object in /home/deerbeauty/public_html/app/app/Http/Controllers/SalonsCtrl.php on line 127
+[19-Jul-2016 23:37:31 UTC] PHP Warning:  Uncaught exception 'ErrorException' with message 'Undefined variable: request' in /home/deerbeauty/public_html/app/app/Http/Controllers/AreasCtrl.php:74
+Stack trace:
+#0 /home/deerbeauty/public_html/app/app/Http/Controllers/AreasCtrl.php(74): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'Undefined varia...', '/home/deerbeaut...', 74, Array)
+#1 [internal function]: App\Http\Controllers\AreasCtrl->update('1')
+#2 /home/deerbeauty/public_html/app/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(246): call_user_func_array(Array, Array)
+#3 /home/deerbeauty/public_html/app/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(162): Illuminate\Routing\Controller->callAction('update', Array)
+#4 /home/deerbeauty/public_html/app/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(107): Illuminate\Routing\ControllerDispatcher->call(Object(App\Http\Controllers\AreasCtrl), Object(Illuminate\Routing\Route), 'update')
+#5 [internal function]: Illuminate\ in /home/deerbeauty/public_html/app/app/Http/Controllers/AreasCtrl.php on line 74
+[19-Jul-2016 23:37:31 UTC] PHP Fatal error:  Call to a member function all() on a non-object in /home/deerbeauty/public_html/app/app/Http/Controllers/AreasCtrl.php on line 74
+[20-Jul-2016 13:16:31 UTC] PHP Warning:  Uncaught exception 'ErrorException' with message 'Undefined variable: request' in /home/deerbeauty/public_html/app/app/Http/Controllers/AreasCtrl.php:74
+Stack trace:
+#0 /home/deerbeauty/public_html/app/app/Http/Controllers/AreasCtrl.php(74): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'Undefined varia...', '/home/deerbeaut...', 74, Array)
+#1 [internal function]: App\Http\Controllers\AreasCtrl->update('1')
+#2 /home/deerbeauty/public_html/app/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(246): call_user_func_array(Array, Array)
+#3 /home/deerbeauty/public_html/app/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(162): Illuminate\Routing\Controller->callAction('update', Array)
+#4 /home/deerbeauty/public_html/app/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(107): Illuminate\Routing\ControllerDispatcher->call(Object(App\Http\Controllers\AreasCtrl), Object(Illuminate\Routing\Route), 'update')
+#5 [internal function]: Illuminate\ in /home/deerbeauty/public_html/app/app/Http/Controllers/AreasCtrl.php on line 74
+[20-Jul-2016 13:16:31 UTC] PHP Fatal error:  Call to a member function all() on a non-object in /home/deerbeauty/public_html/app/app/Http/Controllers/AreasCtrl.php on line 74
+[20-Jul-2016 13:16:39 UTC] PHP Warning:  Uncaught exception 'ErrorException' with message 'Undefined variable: request' in /home/deerbeauty/public_html/app/app/Http/Controllers/AreasCtrl.php:74
+Stack trace:
+#0 /home/deerbeauty/public_html/app/app/Http/Controllers/AreasCtrl.php(74): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'Undefined varia...', '/home/deerbeaut...', 74, Array)
+#1 [internal function]: App\Http\Controllers\AreasCtrl->update('1')
+#2 /home/deerbeauty/public_html/app/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(246): call_user_func_array(Array, Array)
+#3 /home/deerbeauty/public_html/app/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(162): Illuminate\Routing\Controller->callAction('update', Array)
+#4 /home/deerbeauty/public_html/app/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(107): Illuminate\Routing\ControllerDispatcher->call(Object(App\Http\Controllers\AreasCtrl), Object(Illuminate\Routing\Route), 'update')
+#5 [internal function]: Illuminate\ in /home/deerbeauty/public_html/app/app/Http/Controllers/AreasCtrl.php on line 74
+[20-Jul-2016 13:16:39 UTC] PHP Fatal error:  Call to a member function all() on a non-object in /home/deerbeauty/public_html/app/app/Http/Controllers/AreasCtrl.php on line 74
+[20-Jul-2016 13:16:47 UTC] PHP Warning:  Uncaught exception 'ErrorException' with message 'Undefined variable: request' in /home/deerbeauty/public_html/app/app/Http/Controllers/AreasCtrl.php:74
+Stack trace:
+#0 /home/deerbeauty/public_html/app/app/Http/Controllers/AreasCtrl.php(74): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'Undefined varia...', '/home/deerbeaut...', 74, Array)
+#1 [internal function]: App\Http\Controllers\AreasCtrl->update('1')
+#2 /home/deerbeauty/public_html/app/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(246): call_user_func_array(Array, Array)
+#3 /home/deerbeauty/public_html/app/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(162): Illuminate\Routing\Controller->callAction('update', Array)
+#4 /home/deerbeauty/public_html/app/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(107): Illuminate\Routing\ControllerDispatcher->call(Object(App\Http\Controllers\AreasCtrl), Object(Illuminate\Routing\Route), 'update')
+#5 [internal function]: Illuminate\ in /home/deerbeauty/public_html/app/app/Http/Controllers/AreasCtrl.php on line 74
+[20-Jul-2016 13:16:47 UTC] PHP Fatal error:  Call to a member function all() on a non-object in /home/deerbeauty/public_html/app/app/Http/Controllers/AreasCtrl.php on line 74
+[20-Jul-2016 14:02:33 UTC] PHP Warning:  Uncaught exception 'ErrorException' with message 'Undefined variable: request' in /home/deerbeauty/public_html/app/app/Http/Controllers/AreasCtrl.php:74
+Stack trace:
+#0 /home/deerbeauty/public_html/app/app/Http/Controllers/AreasCtrl.php(74): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'Undefined varia...', '/home/deerbeaut...', 74, Array)
+#1 [internal function]: App\Http\Controllers\AreasCtrl->update('1')
+#2 /home/deerbeauty/public_html/app/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(246): call_user_func_array(Array, Array)
+#3 /home/deerbeauty/public_html/app/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(162): Illuminate\Routing\Controller->callAction('update', Array)
+#4 /home/deerbeauty/public_html/app/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(107): Illuminate\Routing\ControllerDispatcher->call(Object(App\Http\Controllers\AreasCtrl), Object(Illuminate\Routing\Route), 'update')
+#5 [internal function]: Illuminate\ in /home/deerbeauty/public_html/app/app/Http/Controllers/AreasCtrl.php on line 74
+[20-Jul-2016 14:02:33 UTC] PHP Fatal error:  Call to a member function all() on a non-object in /home/deerbeauty/public_html/app/app/Http/Controllers/AreasCtrl.php on line 74
+[20-Jul-2016 14:04:28 UTC] PHP Warning:  Uncaught exception 'ErrorException' with message 'Undefined variable: request' in /home/deerbeauty/public_html/app/app/Http/Controllers/AreasCtrl.php:74
+Stack trace:
+#0 /home/deerbeauty/public_html/app/app/Http/Controllers/AreasCtrl.php(74): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'Undefined varia...', '/home/deerbeaut...', 74, Array)
+#1 [internal function]: App\Http\Controllers\AreasCtrl->update('3')
+#2 /home/deerbeauty/public_html/app/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(246): call_user_func_array(Array, Array)
+#3 /home/deerbeauty/public_html/app/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(162): Illuminate\Routing\Controller->callAction('update', Array)
+#4 /home/deerbeauty/public_html/app/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(107): Illuminate\Routing\ControllerDispatcher->call(Object(App\Http\Controllers\AreasCtrl), Object(Illuminate\Routing\Route), 'update')
+#5 [internal function]: Illuminate\ in /home/deerbeauty/public_html/app/app/Http/Controllers/AreasCtrl.php on line 74
+[20-Jul-2016 14:04:28 UTC] PHP Fatal error:  Call to a member function all() on a non-object in /home/deerbeauty/public_html/app/app/Http/Controllers/AreasCtrl.php on line 74
+[20-Jul-2016 16:33:08 UTC] PHP Warning:  Uncaught exception 'ErrorException' with message 'Undefined variable: validator' in /home/deerbeauty/public_html/app/app/Http/Controllers/UsersCtrl.php:39
+Stack trace:
+#0 /home/deerbeauty/public_html/app/app/Http/Controllers/UsersCtrl.php(39): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'Undefined varia...', '/home/deerbeaut...', 39, Array)
+#1 [internal function]: App\Http\Controllers\UsersCtrl->store(Object(Illuminate\Http\Request))
+#2 /home/deerbeauty/public_html/app/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(246): call_user_func_array(Array, Array)
+#3 /home/deerbeauty/public_html/app/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(162): Illuminate\Routing\Controller->callAction('store', Array)
+#4 /home/deerbeauty/public_html/app/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(107): Illuminate\Routing\ControllerDispatcher->call(Object(App\Http\Controllers\UsersCtrl), Object(Illuminate\Routing\Route), 'store')
+#5 [inte in /home/deerbeauty/public_html/app/app/Http/Controllers/UsersCtrl.php on line 39
+[20-Jul-2016 16:33:08 UTC] PHP Fatal error:  Call to a member function fails() on a non-object in /home/deerbeauty/public_html/app/app/Http/Controllers/UsersCtrl.php on line 39
+[20-Jul-2016 16:33:47 UTC] PHP Warning:  Uncaught exception 'ErrorException' with message 'Undefined variable: validator' in /home/deerbeauty/public_html/app/app/Http/Controllers/UsersCtrl.php:39
+Stack trace:
+#0 /home/deerbeauty/public_html/app/app/Http/Controllers/UsersCtrl.php(39): Illuminate\Foundation\Bootstrap\HandleExceptions->handleError(8, 'Undefined varia...', '/home/deerbeaut...', 39, Array)
+#1 [internal function]: App\Http\Controllers\UsersCtrl->store(Object(Illuminate\Http\Request))
+#2 /home/deerbeauty/public_html/app/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(246): call_user_func_array(Array, Array)
+#3 /home/deerbeauty/public_html/app/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(162): Illuminate\Routing\Controller->callAction('store', Array)
+#4 /home/deerbeauty/public_html/app/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(107): Illuminate\Routing\ControllerDispatcher->call(Object(App\Http\Controllers\UsersCtrl), Object(Illuminate\Routing\Route), 'store')
+#5 [inte in /home/deerbeauty/public_html/app/app/Http/Controllers/UsersCtrl.php on line 39
+[20-Jul-2016 16:33:47 UTC] PHP Fatal error:  Call to a member function fails() on a non-object in /home/deerbeauty/public_html/app/app/Http/Controllers/UsersCtrl.php on line 39
+[02-Aug-2016 21:45:52 UTC] PHP Fatal error:  Call to a member function getClientOriginalExtension() on a non-object in /home/deerbeauty/public_html/app/app/Http/Controllers/SalonsCtrl.php on line 59
+[02-Aug-2016 21:46:37 UTC] PHP Fatal error:  Call to a member function getClientOriginalExtension() on a non-object in /home/deerbeauty/public_html/app/app/Http/Controllers/SalonsCtrl.php on line 59
