@@ -95,23 +95,21 @@ class ProjectsCtrl extends Controller {
 	public function api(Request $request)
 	{
 		$projects = Projects::where('license_key',$request->key)->first();
-		
 		if(!$projects)
 		{
-			return response()->json(['valid'=>'License Not Found'],200);
+			return response()->json(['scode'=>404,'valid'=>'License Not Found'],200);
 		}
 		
 		if($projects->url != $request->url)
 		{
-			return Response()->json(['valid'=>'Domain Not Exist'],200);
+			return Response()->json(['scode'=>401,'valid'=>'Domain Not Exist'],200);
 		}
 
 		if(Carbon::parse($projects->end_at) < Carbon::now())
 		{
-			return Response()->json(['valid'=>'Expired Domain'],200);
+			return Response()->json(['scode'=>405,'valid'=>'Expired Domain'],200);
 		}
-
-		return Response()->json(['valid'=>'License valid'],200);
+		return Response()->json(['scode'=>200,'valid'=>'License valid'],200);
 	}
 
 }
