@@ -15,10 +15,22 @@ class ProjectsCtrl extends Controller {
 	 * @return Response
 	 */
 	public function index(Request $request)
-	{
-		$projects = Projects::latest('created_at')->paginate(50);
-		$i = $projects->perPage() * $projects->currentPage() - $projects->perPage()+1;
-		return View('admin.projects.index',compact('projects','i'));
+	{	
+
+		$query = Projects::latest('created_at');
+		if($request->has('q'))
+		{	
+			$request->merge(['q'=>trim($request->q)]);
+			$query->where('name','like','%'.$request->q.'%')->orwhere('url','like','%'.$request->q.'%')->orwhere('status','like','%'.$request->q.'%');
+		}
+		$i = 1 ;
+		$projects = $query->paginate(50);
+		//$i = $projects->perPage() * $projects->currentPage() - $projects->perPage()+1;
+		$numOflicensesActive    = Projects::where('status',1)->count();
+		$numOflicensesDisActive = Projects::where('status',0)->count();
+
+		//dd($projects);
+		return View('admin.projects.index',compact('projects','i','request','$request','numOflicensesActive','numOflicensesDisActive'));
 	}
 
 	/**
@@ -39,6 +51,7 @@ class ProjectsCtrl extends Controller {
 	public function store(Request $request)
 	{
 		$request->merge(['license_key'=>bcrypt(time())]);
+		$request->merge(['status'=> 1]);
 		Projects::create($request->all());
 		return Redirect()->to('projects');
 	}
@@ -110,6 +123,14 @@ class ProjectsCtrl extends Controller {
 			return Response()->json(['scode'=>405,'valid'=>'Expired Domain'],200);
 		}
 		return Response()->json(['scode'=>200,'valid'=>'License valid'],200);
+	}
+
+	public function switchCase($id)
+	{
+		$status = Projects::findOrFail($id) ;
+
+		($status->status == 0) ? $status->update(['status' => 1]) : $status->update(['status' => 0]);
+		return redirect()->back()->with(['msg'=>'Operation Has been Successfully ']) ;
 	}
 
 }

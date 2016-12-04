@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="UTF-8">
 		<title>Register New License</title>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+		<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
 	</head>
 	<body>
 		<br>
@@ -16,7 +16,8 @@
 				</div>
 			{!! Form::close() !!}
 		</div>
+		
 		<script src="https://code.jquery.com/jquery.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+		<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 	</body>
 </html>
