@@ -18,7 +18,7 @@ class CreateProjectsTable extends Migration {
 			$table->string('name');
 			$table->string('url');
 			$table->string('license_key');
-			$table->timestamp('end_at');
+			$table->date('end_at');
 			$table->integer('status');
 			$table->timestamps();
 		});

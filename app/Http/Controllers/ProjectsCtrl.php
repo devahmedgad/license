@@ -23,11 +23,11 @@ class ProjectsCtrl extends Controller {
 			$request->merge(['q'=>trim($request->q)]);
 			$query->where('name','like','%'.$request->q.'%')->orwhere('url','like','%'.$request->q.'%')->orwhere('status','like','%'.$request->q.'%');
 		}
-		$i = 1 ;
 		$projects = $query->paginate(50);
-		//$i = $projects->perPage() * $projects->currentPage() - $projects->perPage()+1;
-		$numOflicensesActive    = Projects::where('status',1)->count();
-		$numOflicensesDisActive = Projects::where('status',0)->count();
+		$i = $projects->perPage() * $projects->currentPage() - $projects->perPage()+1;
+		$numOflicensesActive    = Projects::where('status',1)->where('end_at','>',Carbon::now())->count();
+		$numOflicensesDisActive = Projects::where('status',0)->orWhere('end_at','<',Carbon::now())->count();
+		
 
 		//dd($projects);
 		return View('admin.projects.index',compact('projects','i','request','$request','numOflicensesActive','numOflicensesDisActive'));
@@ -112,15 +112,21 @@ class ProjectsCtrl extends Controller {
 		{
 			return response()->json(['scode'=>404,'valid'=>'License Not Found'],200);
 		}
+
+		if($projects->status == "0")
+		{
+			return response()->json(['scode'=>403,'valid'=>'License Is Invalid'],200);
+		}
 		
 		if($projects->url != $request->url)
 		{
+			InvalidRequests::create(['domain'=>$request->url]);
 			return Response()->json(['scode'=>401,'valid'=>'Domain Not Exist'],200);
 		}
 
 		if(Carbon::parse($projects->end_at) < Carbon::now())
 		{
-			return Response()->json(['scode'=>405,'valid'=>'Expired Domain'],200);
+			return Response()->json(['scode'=>405,'valid'=>'Expired License'],200);
 		}
 		return Response()->json(['scode'=>200,'valid'=>'License valid'],200);
 	}

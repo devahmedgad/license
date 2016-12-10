@@ -15,7 +15,7 @@
 			<a href="{{Url('/')}}/projects/create" class="btn btn-success">Register New</a>
 			<br>
 			<br>
-			@if ($request->has('q'))
+			@if($request->has('q'))
 				<a href="{{Url('/')}}/projects" class="btn btn-info"> <- Back</a>
 			<br>
 			<br>
@@ -60,9 +60,9 @@
 							</td>
 							<td><a href="{{Url('/')}}/projects/{{$project->id}}/edit" class="btn btn-warning">EDIT</a></td>
 							@if($project->status == 0)
-							<td><a href="{{Url('/')}}/projects/switch/{{$project->id}}" class="btn btn-info">Active</a></td>
+							<td><a href="{{Url('/')}}/projects/switch/{{$project->id}}" class="btn btn-info">ACTIVATE</a></td>
 							@else
-							<td><a href="{{Url('/')}}/projects/switch/{{$project->id}}" class="btn btn-success">DisActive</a></td>
+							<td><a href="{{Url('/')}}/projects/switch/{{$project->id}}" class="btn btn-success">DEACTIVATE</a></td>
 							@endif
 							<td>
 								{!!Form::open(["action"=>['ProjectsCtrl@destroy',$project->id],'method'=>'DELETE'])!!}
